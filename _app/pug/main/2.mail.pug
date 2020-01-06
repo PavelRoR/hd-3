@@ -1,0 +1,22 @@
+section#mail-section
+	.container
+		h3.mail-section-title.switch-title Регистрируйтесь на мастер-класс по Дизайну Человека прямо сейчас!
+		p.switch-text.hide
+		form(action="https://shop.mastervision.su/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=1090" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-main
+			.email-block.email-block-form
+				input( type="hidden" value="1" name="required_fields[email]")
+				input(class="input input-mail input-mail-main" name="Contact[email]" type="text" placeholder="Ваш email")
+			button(type="submit").button.button-form.button-form-main Записаться
+			.clearfix
+			p.alert-message
+			.checking
+				input(type="checkbox" id="check-1" checked).check
+				label(for="check-1").check-label Я согласен с 
+					a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки персональных данных по 152 - Ф3
+			div(style="display: none;")
+				#formTypeSpecificVars(style="display: none;")
+					input(type="hidden" value="1090" id="form_newsletter_id_newsletter" name="Contact[id_newsletter]")
+				<!-- API код канала рекламы -->
+				input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page" name="Contact[id_advertising_channel_page]")
+				input(type="hidden" name="formId" value="247")
+				input(type="hidden" name="formVc" value="641047343")
