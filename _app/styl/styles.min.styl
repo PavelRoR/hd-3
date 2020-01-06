@@ -1,8 +1,57 @@
+G = 'Georgia', serif
+GB = 'GeorgiaBold', serif
+GI = 'GeorgiaItalic', serif
+
+@font-face {
+	font-family: 'georgia';
+	src: url('../fonts/georgia.eot');
+	src: url('../fonts/georgia.eot') format('embedded-opentype'),
+		 url('../fonts/georgia.woff2') format('woff2'),
+		 url('../fonts/georgia.woff') format('woff'),
+		 url('../fonts/georgia.ttf') format('truetype'),
+		 url('../fonts/georgia.svg#georgia') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'georgiaBold';
+	src: url('../fonts/georgiaBold.eot');
+	src: url('../fonts/georgiaBold.eot') format('embedded-opentype'),
+		 url('../fonts/georgiaBold.woff2') format('woff2'),
+		 url('../fonts/georgiaBold.woff') format('woff'),
+		 url('../fonts/georgiaBold.ttf') format('truetype'),
+		 url('../fonts/georgiaBold.svg#georgiaBold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'georgiaItalic';
+	src: url('../fonts/georgiaItalic.eot');
+	src: url('../fonts/georgiaItalic.eot') format('embedded-opentype'),
+		 url('../fonts/georgiaItalic.woff2') format('woff2'),
+		 url('../fonts/georgiaItalic.woff') format('woff'),
+		 url('../fonts/georgiaItalic.ttf') format('truetype'),
+		 url('../fonts/georgiaItalic.svg#georgiaItalic') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+@import '../_css/bootstrap.min.css'
+
 *
 	margin 0
 	padding 0
 	outline none
-
+body
+	background-color #fff
+	color: #0c2902
+	font-size: 18px
+	font-family: G
+	line-height: 30px
 a
 	color: #fefefe
 	&:focus
@@ -51,3 +100,56 @@ footer
 		right 0
 		bottom 0
 		cursor pointer
+.button
+	display block
+	margin 0 auto
+	text-align: center
+	font-family: GB
+	font-size: 24px;
+	color: rgb(12, 41, 2);
+	border 1px solid rgb(27, 86, 6);
+	border-radius: 10px;
+	background-color: rgb(236, 167, 18);
+	width: 100%
+	max-width: 272px;
+	height: 60px;
+	line-height: 58px;
+	text-decoration: none
+	transition: all .2s ease
+	&:focus
+		text-decoration: none
+		background-color: rgb(236, 167, 18);
+		color: rgb(12, 41, 2);
+	&:hover
+		text-decoration: none
+		background-color: rgb(12, 41, 2);
+		color rgb(236, 167, 18);
+		transform: translateY(-2px)
+.general-title
+	text-align: center
+	font-size: 26px;
+	font-family: GB
+	color: rgb(27, 86, 6);
+	line-height: 1.154;
+	margin-bottom: 50px
+	min-height 63px
+	background-image url(../img/backs/gt-bg-1.png), url(../img/backs/gt-bg-2.png)
+	background-repeat no-repeat
+	background-position: center left, center right
+	padding 18px 0
+
+
+@import '0.header'
+@import 'main/1.main'
+@import 'main/2.mail'
+@import 'main/3.for'
+@import 'main/4.reasons'
+@import 'main/5.plan'
+@import 'main/6.get'
+@import 'main/7.authors'
+@import 'main/8.revs'
+@import 'main/9.last'
+@import 'main/10.footer'
+@import 'main/11.modal'
+@import 'main/12.politics'
+@import 'main/13.medias'

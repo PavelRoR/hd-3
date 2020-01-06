@@ -1,10 +1,15 @@
--var head_url = '';
--var head_title = '«»';
--var head_description = '';
+-var head_url = 'https://roleva-yurina.mastervision.su/human-design-3/';
+-var head_title = '«Дизайн человека: получите ключи к своей уникальности»';
+-var head_description = '3-дневный онлайн-мастер-класс Анны Ролевой и Вероники Юриной';
 -var head_img = 'img/banner.jpg';
 -var styles = 'css/styles.min.css';
 -var fav_ico = 'favicon.ico';
 -var fav_png = 'favicon.png';
+
+mixin b(cl,p)
+	button.button(class=cl data-toggle="modal" data-target="#Modal")=p
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -13,7 +18,19 @@ html(lang="ru")
 		include pug/scripts/head_scripts
 	body
 		include pug/scripts/body_top_scripts
-		include pug/scripts
-		include pug/scripts/chat
+		include pug/0.header.pug
+		include pug/main/1.main.pug
+		include pug/main/2.mail.pug
+		include pug/main/3.for.pug
+		include pug/main/4.reasons.pug
+		include pug/main/5.plan.pug
+		include pug/main/6.get.pug
+		include pug/main/7.authors.pug
+		include pug/main/8.revs.pug
+		include pug/main/9.last.pug
+		include pug/main/10.footer.pug
+		include pug/main/11.modal.pug
+		include pug/main/12.politics.pug
+		include pug/main/13.scripts.pug
+		//- include pug/scripts/chat
 		include pug/scripts/body_bottom_scripts
-		//iframe(name="results" style="display:none;")
