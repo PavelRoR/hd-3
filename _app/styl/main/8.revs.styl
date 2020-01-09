@@ -1,0 +1,64 @@
+#revs
+	@extend #reasons
+	background-color: #DEF5FB
+	background-image url(../img/backs/revs-bg.png)
+	background-repeat no-repeat
+	background-position: center
+.carousel
+	width 100%
+	max-width 650px
+	margin 0 auto
+.carousel-inner
+	width 100%
+	max-width 490px
+	margin 0 auto
+	background-color #fff
+	border 2px solid #1b5606
+	border-radius: 10px
+	.item
+		img
+			border-radius: 5px
+			&.text-rev-img
+				object-fit: contain
+				object-position: center
+				height 274px
+				width 100%
+.carousel-indicators
+	position static
+	margin 5px auto 0
+	width 100%
+	max-width 380px
+	li
+	.active
+		width 11px
+		height 11px
+		background-color: transparent
+		border: 2px solid #005500
+		margin 0 7px
+		transition: all .4s ease
+	.active
+		border 2px solid #005500
+		background-color: #005500
+.carousel-control
+	width 27px
+	height 48px
+	top calc(50% - 48px)
+	background-position: center
+	text-shadow: none
+	background-color: transparent
+	opacity: 1;
+	&.left
+		background-image url(../img/icons/prev.png)
+		background-repeat no-repeat
+	&.right
+		background-image url(../img/icons/next.png)
+		background-repeat no-repeat
+	&.left
+	&.right
+		&:focus
+			opacity 1
+		&:hover
+			opacity .6
+.video-wrapper-revs
+	&:before
+		padding-top 56.3%

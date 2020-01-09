@@ -1,0 +1,47 @@
+#reasons
+	padding 65px 0
+	border-top: 3px dashed #008B00
+	border-bottom:  3px dashed #008B00
+.reasons-list
+	li
+		list-style: none
+		margin-bottom: 60px
+		span
+			font-family: GB
+		&:last-child
+			margin-bottom: 0
+	&-1
+		li
+			&:nth-child(2)
+				width 260px
+	&-2
+		li
+			&:first-child
+				margin-bottom: 150px
+.reasons-center-block
+	position relative
+	&:before
+		content: ''
+		display block
+		position: absolute
+		left -115px
+		right 0
+		top: -120px
+		width 582px
+		height 405px
+		background-image url(../img/images/reasons-img.png)
+		background-repeat no-repeat
+		background-position: center
+		z-index -1
+	&-title
+		text-align: center
+		font-size: 26px
+		font-family: GI
+		line-height: 48px
+		color #fff
+		margin 80px 0 0
+		span
+			display block
+			font-size: 100px
+			font-family: G
+			margin 0 0 48px

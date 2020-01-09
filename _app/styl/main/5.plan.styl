@@ -1,0 +1,45 @@
+#plan
+	padding 50px 0
+	background-color: #DEF5FB
+	overflow hidden
+.day
+	margin-bottom: 60px
+	position relative
+	padding-right: 300px
+	z-index 10
+	&-img
+		position: absolute
+		z-index -1
+		&-1
+		&-3
+			top 0
+			right -100px
+		&-2
+			top 0
+			left -100px
+	&-title
+		position relative
+		font-size: 24px;
+		font-family: GB
+		color: rgb(12, 41, 2);
+		line-height: 1.25;
+		margin 0 0 30px
+		&:before
+			content ''
+			display block
+			position: absolute
+			top 15px
+			left 160px
+			height 3px
+			border-top: 3px dashed #006300
+			width 1600px
+	&-2
+		padding 0 0 0 300px
+		&-title
+			&:before
+				left -1040px
+				width 1000px
+	&-text
+		margin 0 0 35px
+		span
+			font-family: GB
