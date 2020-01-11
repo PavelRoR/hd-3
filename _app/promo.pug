@@ -1,0 +1,45 @@
+-var head_title = 'Оставьте свои данные, чтоб скачать рабочие тетради для каждого из дней мастер-класса';
+-var styles = '../css/thanks.min.css';
+-var fav_ico = '../favicon.ico'
+-var fav_png = '../favicon.png'
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/0.header.pug
+		section#main
+			.container
+				h1.main-title Оставьте свои данные, чтоб скачать рабочие тетради для каждого из дней мастер-класса. Они помогут вам максимально эффективно работать на уроках
+				.main-container
+					form(action="https://shop.mastervision.su/?r=personal/newsletter/data/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-promo
+						.inputrow
+							.inputblock
+								input(type="hidden" value="1" name="required_fields[phone_number]")
+								input(class="input input-mail" name="Contact[phone_number]" type="text" placeholder="Ваш телефон")
+						button(type="submit").button.button-form Забрать тетради 
+							br
+							| и завершить регистрацию
+						.clearfix
+						p.alert-message
+						.checking
+							input(type="checkbox" id="check" checked).check
+							label(for="check").check-label Я согласен с 
+								a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки персональных данных
+								|  по 152 - Ф3
+						div(style="display: none;")
+							div#formTypeSpecificVars(style="display: none;")
+							<!-- API код канала рекламы --> 
+							input(type="hidden" value="0" name="Contact[id_advertising_channel_page]")#form_newsletter_id_advertising_channel_page
+							input(type="hidden" name="formId" value="251")
+							input(type="hidden" name="formVc" value="3328888430")
+				a.button.button-bots(href="../bots/") Не нужны тетради, 
+					br
+					| завершить регистрацию
+		include pug/bonus/3.footer.pug
+		include pug/main/12.politics.pug
+		script(src="../js/thanks.min.js")
+		include pug/scripts/body_bottom_scripts

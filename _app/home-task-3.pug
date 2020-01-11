@@ -1,0 +1,27 @@
+-var head_url = 'https://roleva-yurina.mastervision.su/human-design-3/home-task-3/';
+-var head_title = '«Эмоциональная реакция»';
+-var head_description = '3 домашнее задание от Анны и Вероники';
+-var video = 'E1pqNmH0iU4';
+-var styles = '../css/bonus.min.css';
+-var fb_content = '2030481470529055'
+-var fav_ico = '../favicon.ico'
+-var fav_png = '../favicon.png'
+-var href = 'https://drive.google.com/file/d/1EBQIxQEpFWO01M_lMJ7EnKbeSd3Vx4Do/view?usp=sharing'
+
+mixin b(cl)
+	a.button(class=cl href=href target="_blank") Скачать PDF
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_fb_scripts
+	body
+		include pug/scripts/body_top_fb_scripts
+		include pug/0.header.pug
+		include pug/ht/1.main.pug
+		include pug/bonus/2.feedback.pug
+		include pug/bonus/3.footer.pug
+		script
+			| var isIE = false || !!document.documentMode;if (isIE) {var head = document.getElementsByTagName("head")[0];var link = document.createElement("link");link.rel = "stylesheet";link.href = "../css/bonus-ie.min.css";head.appendChild(link);}
+		include pug/scripts/body_bottom_scripts

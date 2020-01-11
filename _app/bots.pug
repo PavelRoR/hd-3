@@ -1,0 +1,25 @@
+-var head_title = 'Регистрируйтесь в удобный для вас мессенджер, чтобы оставаться на связи и не пропустить мастер-класс';
+-var styles = '../css/thanks.min.css';
+-var fav_ico = '../favicon.ico'
+-var fav_png = '../favicon.png'
+
+	
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_fb_scripts
+	body
+		include pug/scripts/body_top_fb_scripts
+		include pug/0.header.pug
+		section#main
+			.container
+				h2.main-subtitle Регистрируйтесь в удобный для вас мессенджер, чтобы оставаться на связи и не пропустить мастер-класс
+					br
+					| +
+					span Бонус: «Основные идеи Дизайна Человека за 5 минут или как начать эксперимент?»
+				include pug/bots/bots.pug
+		include pug/bonus/3.footer.pug
+		script
+			| var isIE = false || !!document.documentMode;if (isIE) {var head = document.getElementsByTagName("head")[0];var link = document.createElement("link");link.rel = "stylesheet";link.href = "../css/thanks-ie.min.css";head.appendChild(link);}
+		include pug/scripts/body_bottom_scripts

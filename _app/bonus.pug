@@ -1,0 +1,22 @@
+-var head_url = 'https://roleva-yurina.mastervision.su/human-design-3/bonus/';
+-var head_title = 'Основные идеи Дизайна Человека за 5 минут или как начать эксперимент?';
+-var head_description = 'Бонус от Анны Ролевой и Вероники Юриной';
+-var styles = '../css/bonus.min.css';
+//- -var fb_content = '2030481470529055'
+-var fav_ico = '../favicon.ico'
+-var fav_png = '../favicon.png'
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_fb_scripts
+	body
+		include pug/scripts/body_top_fb_scripts
+		include pug/0.header.pug
+		include pug/bonus/1.main.pug
+		//- include pug/bonus/2.feedback.pug
+		include pug/bonus/3.footer.pug
+		script
+			| var isIE = false || !!document.documentMode;if (isIE) {var head = document.getElementsByTagName("head")[0];var link = document.createElement("link");link.rel = "stylesheet";link.href = "../css/bonus-ie.min.css";head.appendChild(link);}
+		include pug/scripts/body_bottom_scripts
