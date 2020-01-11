@@ -21,6 +21,5 @@ html(lang="ru")
 					span Бонус: «Основные идеи Дизайна Человека за 5 минут или как начать эксперимент?»
 				include pug/bots/bots.pug
 		include pug/bonus/3.footer.pug
-		script
-			| var isIE = false || !!document.documentMode;if (isIE) {var head = document.getElementsByTagName("head")[0];var link = document.createElement("link");link.rel = "stylesheet";link.href = "../css/thanks-ie.min.css";head.appendChild(link);}
+		script(src="../js/thanks.min.js")
 		include pug/scripts/body_bottom_scripts
