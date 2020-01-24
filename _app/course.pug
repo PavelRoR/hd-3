@@ -1,0 +1,34 @@
+-var head_url = 'https://roleva-yurina.mastervision.su/human-design-3/course/';
+-var head_title = '«Дизайн человека»';
+-var head_description = 'Обучающий Анны Ролевой и Вероники Юриной';
+//- -var head_img = 'img/banner.jpg';
+-var styles = '../css/course.min.css';
+-var fav_ico = '../favicon.ico';
+-var fav_png = '../favicon.png';
+
+mixin b(cl,href,p,target,id)
+	a.button(class=cl href=href target=target id=id)=p
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/0.header.pug
+		include pug/course/1.main.pug
+		include pug/course/2.for.pug
+		include pug/course/3.plan.pug
+		include pug/course/4.get.pug
+		include pug/course/5.prices.pug
+		include pug/course/6.authors.pug
+		include pug/course/7.revs.pug
+		include pug/course/8.records.pug
+		include pug/course/9.footer.pug
+		include pug/course/10.modals.pug
+		include pug/course/11.scripts.pug
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts

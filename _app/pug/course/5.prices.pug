@@ -1,0 +1,96 @@
+-today_1 = '9 900р.';
+-today_2 = '14 900р.';
+-today_3 = '29 900р.';
+
+-sale_1 = '3 000р.';
+-sale_2 = '4 500р.';
+-sale_3 = '6 000р.';
+
+-link_1 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4408&clean=true&lg=ru';
+-link_2 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4412&clean=true&lg=ru';
+-link_3 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4416&clean=true&lg=ru';
+
+section#prices
+	.container
+		+gt('','Выберите свой пакет участия:')
+		.packets
+			.row
+				.col-md-4.col-sm-4
+					.packet
+						.packet-head
+							h4.packet-head-title
+								small пакет
+								| "Практик"
+						.packet-body
+							ul.packet-body-list
+								li 8 занятий по 1,5-2 часа
+									span.more-button(data-toggle="modal" data-target="#modal-1") подробнее
+								li Проверка домашних заданий
+								li Дополнительные материалы
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span 12 900р.
+							p.cost.cost-sale Скидка:
+								span#sale-1=sale_1
+							p.cost.cost-today Стоимость сегодня:
+								span#today-1=today_1
+							+b('',link_1,'Выбрать','_blank','link-1')
+				.col-md-4.col-sm-4
+					.packet
+						.packet-head
+							h4.packet-head-title
+								small пакет
+								| "СПЕЦИАЛИСТ"
+						.packet-body
+							ul.packet-body-list
+								li 10 занятий по 1,5-2 часа
+									span.more-button(data-toggle="modal" data-target="#modal-2") подробнее
+								li Проверка домашних заданий
+								li Дополнительные материалы
+								li Скайп-чат
+								li Живые онлайн-встречи с ответами на вопросы
+								li Урок по монетизации
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span 19 400р.
+							p.cost.cost-sale Скидка:
+								span#sale-2=sale_2
+							p.cost.cost-today Стоимость сегодня:
+								span#today-2=today_2
+							+b('',link_2,'Выбрать','_blank','link-2')
+				.col-md-4.col-sm-4
+					.packet
+						.packet-head
+							h4.packet-head-title
+								small пакет
+								| "КОНСУЛЬТАНТ"
+						.packet-body
+							ul.packet-body-list
+								li 10 занятий по 1,5-2 часа
+									span.more-button(data-toggle="modal" data-target="#modal-2") подробнее
+								li Проверка домашних заданий
+								li Дополнительные материалы
+								li Скайп-чат
+								li Живые онлайн-встречи с ответами на вопросы
+								li Урок по монетизации
+								li Модуль "Консультирование" из трех уроков
+								li Курс "Монетизация" в записи - 14 уроков
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span 35 900р.
+							p.cost.cost-sale Скидка:
+								span#sale3-=sale_3
+							p.cost.cost-today Стоимость сегодня:
+								span#today-3=today_3
+							+b('',link_3,'Выбрать','_blank','link-3')
+		.prepayment
+			h4.prepaymant-title Акция!!!
+			p.prepayment-text Платите 1 000р., бонусом получаете 
+				span#prepayment-bonus 1 000р. 
+				br
+				| На счет зачисляется 
+				span#prepayment-credited 2 000р.
+			a.button.prepayment-button(href="https://shop.mastervision.su/?r=ordering/cart/as1&id=4420&clean=true&lg=ru" target="_blank")#prepayment-link Оплатить 1 000р.
+		.timer
+			h4.timer-title Скидка уменьшится через:
+			.clock

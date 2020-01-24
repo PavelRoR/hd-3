@@ -1,0 +1,58 @@
+section#revs
+	.container
+		+gt('','Отзывы учеников')
+		.row
+			.col-md-6.col-sm-6
+				#text-revs.carousel.slide(data-ride="carousel" data-interval="false")
+					.carousel-inner(role="listbox")
+						.item.active
+							a( href="../img/revs/rev-2.jpg" data-fancybox="revs")
+								img.text-rev-img( src="../img/revs/rev-2.jpg" alt="Отзыв 2")
+						.item
+							a( href="../img/revs/rev-3.jpg" data-fancybox="revs")
+								img.text-rev-img( src="../img/revs/rev-3.jpg" alt="Отзыв 3")
+						.item
+							a( href="../img/revs/rev-1.jpg" data-fancybox="revs")
+								img.text-rev-img( src="../img/revs/rev-1.jpg" alt="Отзыв 1")
+					ol.carousel-indicators.revs-indicators
+						li.active( data-target="#text-revs" data-slide-to="0")
+						li( data-target="#text-revs" data-slide-to="1")
+						li( data-target="#text-revs" data-slide-to="2")
+					.controls.text-controls
+						a( class="left carousel-control" href="#text-revs" role="button" data-slide="prev")
+						a( class="right carousel-control" href="#text-revs" role="button" data-slide="next")
+			.col-md-6.col-sm-6
+				#video-revs.carousel.slide(data-ride="carousel" data-interval="false")
+					.carousel-inner(role="listbox")
+						.item.active
+							.video-wrapper.video-wrapper-revs(data-youtube="O3BXFtns4IA" data-img="../img/revs/video-1.jpg")
+								img(src="../img/revs/video-1.jpg", alt="Видео отзыв")
+						.item
+							.video-wrapper.video-wrapper-revs(data-youtube="9IJZS4Y1c0M" data-img="../img/revs/video-2.jpg")
+								img(src="../img/revs/video-2.jpg", alt="Видео отзыв")
+						.item
+							.video-wrapper.video-wrapper-revs(data-youtube="Efb8J-hswSY" data-img="../img/revs/video-4.jpg")
+								img(src="../img/revs/video-4.jpg", alt="Видео отзыв")
+						.item
+							.video-wrapper.video-wrapper-revs(data-youtube="9i1znqcQ36I" data-img="../img/revs/video-5.jpg")
+								img(src="../img/revs/video-5.jpg", alt="Видео отзыв")
+						.item
+							.video-wrapper.video-wrapper-revs(data-youtube="8wBbd0n6Vlw" data-img="../img/revs/video-6.jpg")
+								img(src="../img/revs/video-6.jpg", alt="Видео отзыв")
+						.item
+							.video-wrapper.video-wrapper-revs(data-youtube="AyQggyk4FSQ" data-img="../img/revs/video-7.jpg")
+								img(src="../img/revs/video-7.jpg", alt="Видео отзыв")
+						.item
+							.video-wrapper.video-wrapper-revs(data-youtube="R7ZESI7tuvo" data-img="../img/revs/video-8.jpg")
+								img(src="../img/revs/video-8.jpg", alt="Видео отзыв")
+					ol.carousel-indicators.revs-indicators
+						li.active( data-target="#revs-slider" data-slide-to="0")
+						li( data-target="#video-revs" data-slide-to="1")
+						li( data-target="#video-revs" data-slide-to="2")
+						li( data-target="#video-revs" data-slide-to="3")
+						li( data-target="#video-revs" data-slide-to="4")
+						li( data-target="#video-revs" data-slide-to="5")
+						li( data-target="#video-revs" data-slide-to="6")
+					.controls.text-controls
+						a( class="left carousel-control" href="#video-revs" role="button" data-slide="prev")
+						a( class="right carousel-control" href="#video-revs" role="button" data-slide="next")
