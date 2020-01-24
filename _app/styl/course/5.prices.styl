@@ -1,0 +1,99 @@
+#prices
+	@extend #plan
+.packet
+	width 100%
+	max-width 350px
+	margin 0 auto
+	background-color:#fff;
+	border: 2px solid#1b5606;
+	border-radius: 10px;
+	padding 20px
+	&-head
+		padding 0 0 20px
+		&-title
+			text-align: center
+			font-size: 24px
+			font-family: GB
+			color rgb(12, 41, 2);
+			text-transform: uppercase
+			small
+				display block
+				font-size: 16px
+				font-family: G
+				text-transform: none
+	&-body
+		padding 20px 0
+		border-top:  2px solid rgba(#1b5606,.5)
+		border-bottom:  2px solid rgba(#1b5606,.5)
+		min-height 474px
+		&-list
+			@extend .gets-list
+			li
+				margin-bottom: 10px
+	&-footer
+		text-align: center
+		padding 20px 0 0
+.more-button
+	display block
+	color #aaa
+	font-size: 16px
+	font-family: GI
+	cursor pointer
+	transition: all .3s ease
+	&:hover
+		color #000
+.cost
+	font-size: 24px
+	margin-bottom: 20px
+	span
+		display block
+		font-size: 30px
+		font-family: GB
+	&-full
+		span
+			text-decoration: line-through
+			&.unbroken
+				text-decoration: none
+	&-sale
+		color red
+	&-today
+		color green
+		margin-bottom: 25px
+.prepayment
+	text-align: center
+	margin 30px 0 40px
+	&-title
+		font-size: 32px
+		color red
+		font-family: GB
+	&-text
+		margin 15px 0 20px
+		font-size: 20px
+.timer-title
+	text-align: center
+	font-size: 32px
+	color red
+	font-family: GB
+.alert-danger
+	color: #a94442;
+	background-color: #f2dede;
+	padding: 10px;
+	width 100%
+	max-width 360px
+	margin 20px auto 0
+	border: 1px solid #ebccd1;
+	border-radius: 4px;
+	font-size: 22px;
+	text-align: center
+.flip-clock-wrapper
+	width: 100%
+	max-width 460px
+	margin-top: 30px
+.flip-clock-divider .flip-clock-label
+	color #000
+.flip-clock-dot
+	background-color: #4d67ac
+.flip-clock-wrapper ul li a div div.inn
+	color: #fff
+	background-color: #4d67ac
+	text-shadow: 2px 2px 2px rgba(#022a37,.6);

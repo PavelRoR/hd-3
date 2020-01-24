@@ -9,7 +9,7 @@ if (isIE) {
     var head = document.getElementsByTagName("head")[0];
     var link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "css/course-ie.min.css";
+    link.href = "../css/course-ie.min.css";
     head.appendChild(link);
 }
 
